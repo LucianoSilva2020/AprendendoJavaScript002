@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando numero</title>
+</head>
+<body>
+    <form id="frm" action="#">
+        <input type="text" id="entrada">
+        <input type="button" onclick="myFunction();" value="Executar">
+    </form>
+        <p id="resultado"></p>
+        <script>
+            function myFunction(){
+let frm = document.forms[0];
+let entrada = frm.elements.entrada.value;
+
+let maria = '';
+
+if (entrada < 100){
+    maria = "Numero pequeno!";
+} 
+else if (entrada < 500){
+    maria = "Numero medio!";
+} else {
+    maria = "Numero grande!";
+}
+document.getElementById('resultado').innerHTML = maria;
+            }
+        </script>
+</body>
+</html>
